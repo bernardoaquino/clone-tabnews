@@ -1,5 +1,5 @@
 # clone-tabnews
-A clone of the tabnews project (curso.dev)
+A clone of the tabnews project (curso.dev - Filipe Deschamps)
 
 ## Install NVM and NodeJS specific version
 ```sh
@@ -43,7 +43,7 @@ npm run dev
     - Lag(Player teleporting)
 
 ## Git
-The Git stores file snapshots (blobs) and creates pointers(commits: "compromisso") to them. If a file is altered, it generates a new blob and a new pointer (keeping previous pointers for unchanged files).
+The Git stores file snapshots (blobs) and creates pointers(Commit: "Compromisso") to them. If a file is altered, it generates a new blob and a new pointer (keeping previous pointers for unchanged files).
 
 Old version control systems (CVS) used to store a timeline between changes with diff (Delta between versions: Delta Encoding).
 
@@ -98,3 +98,18 @@ origin/main (github web) | local/main (local git)
 ```sh
 git branch
 ```
+
+## Client and Server
+- Client: The one who requests something.
+- Server: The one who provides something.
+  
+Protocol example: HTTP on TCP/IP.
+
+### Host("Abrigo") Website - Vercel
+- Moving files to a specific location (Deploy: "Implantar")
+  - FTP Protocol (Old)
+  - Editing the file on the server(Old)
+  - Using Git on the server (New)
+
+### CI/CD
+With each new push, Vercel deploys the last pushed commit and maintains a history of previous deployments with a permanent URL.
