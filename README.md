@@ -82,7 +82,7 @@ git diff
 
 Amend("Emendar") a change to an existing commit (replaces the previous commit)
 ```sh
-git commit --amend
+git commit --amend -m "message" 
 ```
 
 Push("Empurrar")/upload the changes from the local repository to the remote (GitHub)
