@@ -106,7 +106,7 @@ git branch
 Protocol example: HTTP on TCP/IP.
 
 ### Host("Abrigo") Website - Vercel
-- Moving files to a specific location (Deploy: "Implantar")
+- Moving files to a specific location (deploy: "implantar")
   - FTP Protocol (Old)
   - Editing the file on the server(Old)
   - Using Git on the server (New)
