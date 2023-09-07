@@ -130,6 +130,6 @@ Protocol example: HTTP on TCP/IP.
   - Editing the file on the server(Old)
   - Using Git on the server (New)
 
-### CI/CD
+### CI/CD (Continuous Integration/Continuous Delivery)
 
 With each new push, Vercel deploys the last pushed commit and maintains a history of previous deployments with a permanent URL.
