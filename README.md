@@ -30,6 +30,14 @@ npm install react@18.2.0
 npm install react-dom@18.2.0
 ```
 
+## Add Next to package.json
+
+```json
+"scripts": {
+  "dev": "next dev",
+}
+```
+
 ## Run (next dev)
 
 ```sh
@@ -82,21 +90,27 @@ git status
 ```
 
 ```sh
+git diff
+```
+
+```sh
 git add .gitignore
 ```
 
+Stage all files
+
 ```sh
-git commit -m "message" 
+git add -A
 ```
 
 ```sh
-git diff
+git commit -m "message"
 ```
 
 Amend("Emendar") a change to an existing commit (replaces the previous commit)
 
 ```sh
-git commit --amend -m "message" 
+git commit --amend -m "message"
 ```
 
 Push("Empurrar")/upload the changes from the local repository to the remote (GitHub)
@@ -120,7 +134,7 @@ git branch
 
 - Client: The one who requests something.
 - Server: The one who provides something.
-  
+
 Protocol example: HTTP on TCP/IP.
 
 ### Host("Abrigo") Website - Vercel
@@ -150,7 +164,9 @@ Example: List of assignments to be done.
 
 ### EditorConfig
 
-Create .editorconfig
+Obs: Only format the code before saving the file.
+
+#### Create .editorconfig
 
 ```.editorconfig
 root = true
@@ -159,3 +175,43 @@ root = true
 indent_style = space
 indent_size = 2
 ```
+
+Install EditorConfig extension on VSCode
+
+### Code Formatter (Prettier)
+
+Obs: Use Prettier with npm scale its use.
+
+#### Install Prettier as a development dependency
+
+```sh
+npm install prettier --save-dev
+```
+
+```sh
+npm install prettier --D
+```
+
+#### Add Prettier to package.json
+
+```json
+"scripts": {
+  "lint:check": "prettier --check .",
+  "lint:fix": "prettier --write ."
+}
+```
+
+#### Run Prettier
+
+```sh
+npm run lint:check
+```
+
+```sh
+npm run lint:fix
+```
+
+- Install Prettier extension on VSCode
+- Enable prettier as default formatter on VSCode
+- Enable format on save on VSCode
+- Disable auto save on VSCode
