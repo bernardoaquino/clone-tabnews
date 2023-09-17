@@ -133,3 +133,29 @@ Protocol example: HTTP on TCP/IP.
 ### CI/CD (Continuous Integration/Continuous Delivery)
 
 With each new push, Vercel deploys the last pushed commit and maintains a history of previous deployments with a permanent URL.
+
+## Milestones and Issues
+
+Group issues and pull requests around a stage of the project.
+
+Example: List of assignments to be done.
+
+```MD
+- [ ] Ligar sincronização do Editor
+- [ ] Configurar o EditorConfig
+- [ ] Configurar o Prettier
+```
+
+## Code styling (Standards)
+
+### EditorConfig
+
+Create .editorconfig
+
+```.editorconfig
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+```
