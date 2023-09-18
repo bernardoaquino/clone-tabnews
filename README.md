@@ -343,7 +343,7 @@ Test everything after a change.
 
 A code that execute your code.
 
-Expectation: What you expect to happen.
+Expect("espera"): What you expect to happen.
 
 Watch mode: Run the tests after a change automatically.
 
@@ -371,3 +371,47 @@ npm run test
 ```sh
 npm test
 ```
+
+#### Write a test
+
+/models/calculator.js
+
+```js
+function sum(a, b) {
+  if (typeof a !== "number" || typeof b !== "number") {
+    return "Error";
+  }
+  return a + b;
+}
+
+exports.sum = sum; // CommonJS
+```
+
+/tests/calculator.test.js
+
+```js
+const calculator = require("../models/calculator.js");
+
+test("sum 2 + 2 to equal 4", () => {
+  const result = calculator.sum(2, 2);
+  expect(result).toBe(4);
+});
+
+test("sum 5 + 100 to equal 105", () => {
+  const result = calculator.sum(5, 100);
+  expect(result).toBe(105);
+});
+
+test("sum 'banana' + 100 to equal 'Erro'", () => {
+  const result = calculator.sum("banana", 100);
+  expect(result).toBe("Error");
+});
+```
+
+On the left side(expect) there is a dinamic value (Softcoded), on the right(toBe) there is a expected value (Hardcoded).
+
+Obs: One test dont prove anything that the application works. You need to test various the possibilities/scenarios.
+
+#### TDD (Test Driven Development)
+
+Test guide the development. First write the test, then write the code.
