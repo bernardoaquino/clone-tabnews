@@ -215,3 +215,47 @@ npm run lint:fix
 - Enable prettier as default formatter on VSCode
 - Enable format on save on VSCode
 - Disable auto save on VSCode
+
+#### Add .prettierignore
+
+## DNS (Domain Name System)
+
+Converts a domain name to an IP address.
+
+Domain its a human-readable name("apelido") for an IP address.
+
+Your computer asks the DNS server for the IP address of a domain and then connects to it.
+
+Every connection point on the internet has an IP address.
+
+DNS Server is like a database with domain names and their respective IP addresses.
+
+Obs: Distributed denial-of-service attack on root nameservers. (Wikipedia)
+
+### Register a domain
+
+Registrar("registrador") - Company that registers domains. Ex: Registro.br, HostGator, GoDaddy, etc.
+
+Registry("registro") - Nic.br: Responsible for the registration and maintenance of domain names that use the .br extension.
+
+TLD (Top Level Domain) - .br (NIC.br)
+
+Authoritative server(Nameservers) - DNS server that stores the DNS records for a domain. (registro.br)
+
+Root server - DNS server that stores the DNS records for a TLD. (NIC.br)
+
+Obs: <https://whatsmydns.net/#NS/example.com> (DNS propagation CHECKER)
+
+### Configure DNS server(Authoritative)
+
+- Cloudflare - DNS server
+- Vercel - DNS server
+
+A = Address: Maps a domain to an IP address.
+
+## McDonald's theory
+
+Sugestion something bizarre, withou any sense, to make the people think about it and choose the other options.
+
+"If i choose this, i prefer the other options. (List other options)"
+"You brain will feel inspired to have good ideas, to get away from bad ideas."
