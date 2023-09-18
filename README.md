@@ -259,3 +259,115 @@ Sugestion something bizarre, withou any sense, to make the people think about it
 
 "If i choose this, i prefer the other options. (List other options)"
 "You brain will feel inspired to have good ideas, to get away from bad ideas."
+
+## Uptime and SLA (Service Level Agreement)
+
+Uptime: Time that a service is available.
+SLA: Contract between the service provider and the customer.
+
+Obs: Don't exist 100% uptime.
+
+### Status page
+
+- <https://status.vercel.com/>
+- <https://health.aws.amazon.com/health/status>
+
+## PoC (Proof of Concept) and MVP (Minimum Viable Product)
+
+- What proves that the idea is possible.
+- Create a prototype to validate the idea. (The minimum necessary)
+
+Obs: Find cheap ways to validate the idea. After that, invest in the idea with the minimum. (New things or improvements)
+
+## Foundation
+
+- Architeture Proposal and Folders
+- Automatated Tests
+- Database (Local)
+- Migrations
+- Continuous Integration
+- Code linter
+- Commits linter
+- Database (Homologation and Production)
+- License Type
+
+### Architeture Proposal and Folders
+
+Avoid Overengineering: Excessive use of tools and techniques.
+
+Avoid Underengineering: Lack of tools and techniques.
+
+Find the balance between the two.
+
+Ex: Choosing a language
+
+- Intern maturity (Company)
+- Hiring (People - Seniority)
+- Documentation (Community)
+- Aplicability (Project)
+
+Obs: Software is modifiable.
+
+#### Architeture Proposal
+
+Software Architecture is different from Folder Structure. Ex: You can apply the MVC pattern and the Clean Architecture pattern in one folder structure or file.
+
+Software Architecture: Is defined by the scope of the components and the relationships between them.
+
+A simple architecture and a good modeling can make you go far.
+
+#### Folders
+
+```md
+📦 root
+┣ 📂 pages
+┃ ┗ 📜 index.js
+┣ 📂 models
+┃ ┣ 📜 user.js
+┃ ┣ 📜 content.js
+┃ ┗ 📜 password.js
+┣ 📂 infra
+┃ ┗ 📜 database.js
+┃ ┣ 📂 migrations
+┃ ┣ 📂 provisioning
+┃ ┃ ┣ 📂 staging
+┃ ┃ ┣ 📂 production
+┣ 📂 tests
+```
+
+### Automatated Tests (Jest)
+
+Test everything after a change.
+
+#### Test runner and Test framework
+
+A code that execute your code.
+
+Expectation: What you expect to happen.
+
+Watch mode: Run the tests after a change automatically.
+
+#### Install Jest as a development dependency
+
+```sh
+npm install --save-dev jest@29.6.2
+```
+
+#### Add Jest to package.json
+
+```json
+"scripts": {
+  "test": "jest",
+  "test:watch": "jest --watch"
+}
+```
+
+#### Run Jest
+
+```sh
+npm run test
+```
+
+```sh
+npm test
+```
